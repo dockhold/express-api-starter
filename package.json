@@ -1,0 +1,12 @@
+{
+  "name": "express-api-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Node / Express JSON API that deploys to Dockhold with zero config.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
