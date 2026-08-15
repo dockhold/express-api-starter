@@ -12,8 +12,8 @@ Dockhold assigns.
 2. Click the **Deploy to Dockhold** button above, or open
    [app.dockhold.eu/new](https://app.dockhold.eu/new), connect GitHub, and pick
    your repo.
-3. Dockhold installs dependencies and starts the API. It goes live at
-   `https://<your-app>.dockhold.app` with HTTPS handled.
+3. Dockhold builds the included [`Dockerfile`](Dockerfile) and starts the API.
+   It goes live at `https://<your-app>.dockhold.app` with HTTPS handled.
 
 `GET /` returns a JSON greeting; `GET /health` returns `{ "status": "ok" }`.
 Every later push to your main branch redeploys.
