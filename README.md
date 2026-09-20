@@ -4,12 +4,12 @@ A Node / Express JSON API that deploys to [Dockhold](https://dockhold.eu) with
 zero config. It's already a long-running server — it just listens on the port
 Dockhold assigns.
 
-[![Deploy to Dockhold](https://img.shields.io/badge/Deploy%20to-Dockhold-2563eb?style=for-the-badge)](https://app.dockhold.eu/new?repo=https://github.com/dockhold/express-api-starter)
+[![Deploy on Dockhold](https://dockhold.eu/button.svg)](https://app.dockhold.eu/new?repo=https://github.com/dockhold/express-api-starter&name=express-api-starter&ref=button)
 
 ## Deploy it
 
 1. Click **Use this template** (or fork this repo) to get your own copy.
-2. Click the **Deploy to Dockhold** button above, or open
+2. Click the **Deploy on Dockhold** button above, or open
    [app.dockhold.eu/new](https://app.dockhold.eu/new), connect GitHub, and pick
    your repo.
 3. Dockhold builds the included [`Dockerfile`](Dockerfile) and starts the API.
@@ -17,6 +17,15 @@ Dockhold assigns.
 
 `GET /` returns a JSON greeting; `GET /health` returns `{ "status": "ok" }`.
 Every later push to your main branch redeploys.
+
+## Deploy with your AI tool
+
+Install the Dockhold plugin or MCP server in your AI coding tool
+([setup guide](https://dockhold.eu/docs/recipes/deploy-from-your-ai-tool)), then
+say "put this online" in a folder with this template. The tool signs you in
+through the browser once and reports the URL when the app is live.
+
+Or from a terminal: `npx dockhold login`, then `npx dockhold deploy`.
 
 ## The one rule
 
